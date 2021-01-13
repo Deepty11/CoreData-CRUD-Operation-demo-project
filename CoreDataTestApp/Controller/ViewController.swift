@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -22,8 +23,18 @@ class ViewController: UIViewController {
     }
     func fetchPeople(){
         //Fetch data from the coreData in the tableView
+        
         do{
-            self.items = try context.fetch(Person.fetchRequest())
+            //import CoreData before using NSFetchRequest
+            let request = Person.fetchRequest() as NSFetchRequest<Person>
+            //Filter data : fetching only the names containing 'Ted'
+//            let pred = NSPredicate(format: "name CONTAINS %@","Ted")
+//            request.predicate = pred
+            
+            //sorting: in ascending order
+            let sort = NSSortDescriptor(key: "name", ascending: true)
+            request.sortDescriptors = [sort] // since there may happens to be many sorting constraints that is why array is returned
+            self.items = try context.fetch(request)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
