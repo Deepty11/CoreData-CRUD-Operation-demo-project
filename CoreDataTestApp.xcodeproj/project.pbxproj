@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		5285C5CD25AEE078003C42AE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5CC25AEE078003C42AE /* TableViewCell.swift */; };
 		5285C5D425AEE0B0003C42AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5D325AEE0B0003C42AE /* ViewController.swift */; };
-		5285C5DB25AEEA4A003C42AE /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5D925AEEA4A003C42AE /* Person+CoreDataClass.swift */; };
-		5285C5DC25AEEA4A003C42AE /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5DA25AEEA4A003C42AE /* Person+CoreDataProperties.swift */; };
+		5285C5FC25AEFE1E003C42AE /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5FA25AEFE1E003C42AE /* Person+CoreDataProperties.swift */; };
+		5285C5FD25AEFE1E003C42AE /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5FB25AEFE1E003C42AE /* Family+CoreDataProperties.swift */; };
+		5285C60025AEFEA9003C42AE /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C5FF25AEFEA9003C42AE /* Person+CoreDataClass.swift */; };
+		5285C60325AEFEFC003C42AE /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285C60225AEFEFC003C42AE /* Family+CoreDataClass.swift */; };
 		528CB99D25A7166500DA4BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CB99C25A7166500DA4BCB /* AppDelegate.swift */; };
 		528CB99F25A7166500DA4BCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CB99E25A7166500DA4BCB /* SceneDelegate.swift */; };
 		528CB9A425A7166500DA4BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CB9A225A7166500DA4BCB /* Main.storyboard */; };
@@ -22,8 +24,10 @@
 /* Begin PBXFileReference section */
 		5285C5CC25AEE078003C42AE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5285C5D325AEE0B0003C42AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5285C5D925AEEA4A003C42AE /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "../../Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		5285C5DA25AEEA4A003C42AE /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5285C5FA25AEFE1E003C42AE /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5285C5FB25AEFE1E003C42AE /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Family+CoreDataProperties.swift"; path = "../../Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5285C5FF25AEFEA9003C42AE /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5285C60225AEFEFC003C42AE /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
 		528CB99925A7166500DA4BCB /* CoreDataTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528CB99C25A7166500DA4BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528CB99E25A7166500DA4BCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +52,10 @@
 		5285C5C725AEBBF0003C42AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5285C5D925AEEA4A003C42AE /* Person+CoreDataClass.swift */,
-				5285C5DA25AEEA4A003C42AE /* Person+CoreDataProperties.swift */,
+				5285C5FA25AEFE1E003C42AE /* Person+CoreDataProperties.swift */,
+				5285C5FB25AEFE1E003C42AE /* Family+CoreDataProperties.swift */,
+				5285C5FF25AEFEA9003C42AE /* Person+CoreDataClass.swift */,
+				5285C60225AEFEFC003C42AE /* Family+CoreDataClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5285C5DC25AEEA4A003C42AE /* Person+CoreDataProperties.swift in Sources */,
+				5285C60025AEFEA9003C42AE /* Person+CoreDataClass.swift in Sources */,
 				5285C5D425AEE0B0003C42AE /* ViewController.swift in Sources */,
+				5285C5FD25AEFE1E003C42AE /* Family+CoreDataProperties.swift in Sources */,
 				5285C5CD25AEE078003C42AE /* TableViewCell.swift in Sources */,
-				5285C5DB25AEEA4A003C42AE /* Person+CoreDataClass.swift in Sources */,
+				5285C60325AEFEFC003C42AE /* Family+CoreDataClass.swift in Sources */,
+				5285C5FC25AEFE1E003C42AE /* Person+CoreDataProperties.swift in Sources */,
 				528CB9A725A7166500DA4BCB /* CoreDataTestApp.xcdatamodeld in Sources */,
 				528CB99D25A7166500DA4BCB /* AppDelegate.swift in Sources */,
 				528CB99F25A7166500DA4BCB /* SceneDelegate.swift in Sources */,
